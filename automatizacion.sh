@@ -6,3 +6,6 @@ chmod a+x gradlew
 cp app/build/outputs/apk/debug/app-debug.apk ./..
 
 cd ..
+
+cd easybuggy-master
+mvn clean install
