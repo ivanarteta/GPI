@@ -651,3 +651,17 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 2022.05.23 16:18:03 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
 2022.05.23 16:18:03 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
 2022.05.23 16:18:04 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.CeWorkerImpl] Executed task | project=webview | type=REPORT | id=AYDxSCBExnzouBU4kIH- | status=SUCCESS | time=4854ms
+2022.05.23 17:22:06 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2022.05.23 17:22:06 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2022.05.23 17:22:07 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2022.05.23 17:22:07 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2022.05.23 17:22:07 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2022.05.23 17:22:07 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2022.05.23 17:22:10 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2022.05.23 17:22:10 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2022.05.23 17:22:11 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2022.05.23 17:26:24 WARN  ce[][o.e.t.OutboundHandler] send message failed [channel: Netty4TcpChannel{localAddress=0.0.0.0/0.0.0.0:37156, remoteAddress=/127.0.0.1:9001}]
+java.nio.channels.ClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(...)(Unknown Source)
+2022.05.23 17:27:01 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /home/alumno/Escritorio/GPI/sonarqube-7.8
+2022.05.23 17:27:02 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
