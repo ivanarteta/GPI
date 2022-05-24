@@ -1,0 +1,727 @@
+2022.05.23 15:40:56 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/ (/dev/mapper/ssd-vm--69052--disk--0)]], net usable_space [2.8gb], net total_space [30.3gb], types [ext4]
+2022.05.23 15:40:56 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2022.05.23 15:40:56 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [SsDdV1RkR4KDMFpA1tPfVQ]
+2022.05.23 15:40:56 INFO  es[][o.e.n.Node] version[6.8.0], pid[1267], build[default/tar/65b6179/2019-05-15T20:06:13.172855Z], OS[Linux/5.4.128-1-pve/amd64], JVM[Private Build/OpenJDK 64-Bit Server VM/11.0.15/11.0.15+10-Ubuntu-0ubuntu0.20.04.1]
+2022.05.23 15:40:56 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/home/alumno/Descargas/sonarqube-7.8/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/home/alumno/Descargas/sonarqube-7.8/elasticsearch, -Des.path.conf=/home/alumno/Descargas/sonarqube-7.8/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+2022.05.23 15:40:57 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2022.05.23 15:40:57 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2022.05.23 15:40:57 INFO  es[][o.e.p.PluginsService] loaded module [mapper-extras]
+2022.05.23 15:40:57 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2022.05.23 15:40:57 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2022.05.23 15:40:57 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2022.05.23 15:40:57 INFO  es[][o.e.p.PluginsService] loaded module [repository-url]
+2022.05.23 15:40:57 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2022.05.23 15:40:57 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2022.05.23 15:41:00 WARN  es[][o.e.d.c.s.Settings] [http.enabled] setting was deprecated in Elasticsearch and will be removed in a future release! See the breaking changes documentation for the next major version.
+2022.05.23 15:41:01 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and host providers [settings]
+2022.05.23 15:41:02 INFO  es[][o.e.n.Node] initialized
+2022.05.23 15:41:02 INFO  es[][o.e.n.Node] starting ...
+2022.05.23 15:41:02 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2022.05.23 15:41:05 INFO  es[][o.e.c.s.MasterService] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{365CMgtGQmKG8WcODnUudQ}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}
+2022.05.23 15:41:05 INFO  es[][o.e.c.s.ClusterApplierService] new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{365CMgtGQmKG8WcODnUudQ}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: apply cluster state (from master [master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{365CMgtGQmKG8WcODnUudQ}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+2022.05.23 15:41:05 INFO  es[][o.e.n.Node] started
+2022.05.23 15:41:06 INFO  es[][o.e.m.j.JvmGcMonitorService] [gc][4] overhead, spent [294ms] collecting in the last [1s]
+2022.05.23 15:41:06 WARN  es[][o.e.g.G.InternalPrimaryShardAllocator] [projectmeasures][4]: failed to list shard for shard_started on node [SsDdV1RkR4KDMFpA1tPfVQ]
+org.elasticsearch.action.FailedNodeException: Failed node [SsDdV1RkR4KDMFpA1tPfVQ]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.onFailure(TransportNodesAction.java:236) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.access$200(TransportNodesAction.java:151) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction$1.handleException(TransportNodesAction.java:210) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.transport.TransportService$ContextRestoreResponseHandler.handleException(TransportService.java:1114) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.processException(TransportService.java:1226) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.sendResponse(TransportService.java:1200) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.transport.TransportService$7.onFailure(TransportService.java:703) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.onFailure(ThreadContext.java:736) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:39) [elasticsearch-6.8.0.jar:6.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+Caused by: org.elasticsearch.transport.RemoteTransportException: [sonarqube][127.0.0.1:9001][internal:gateway/local/started_shards[n]]
+Caused by: org.elasticsearch.ElasticsearchException: failed to load started shards
+	at org.elasticsearch.gateway.TransportNodesListGatewayStartedShards.nodeOperation(TransportNodesListGatewayStartedShards.java:169) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.TransportNodesListGatewayStartedShards.nodeOperation(TransportNodesListGatewayStartedShards.java:61) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.nodeOperation(TransportNodesAction.java:138) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$NodeTransportHandler.messageReceived(TransportNodesAction.java:259) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$NodeTransportHandler.messageReceived(TransportNodesAction.java:255) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:66) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:692) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:751) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-6.8.0.jar:6.8.0]
+	... 3 more
+Caused by: org.elasticsearch.ElasticsearchException: java.io.IOException: failed to read [id:11, file:/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0/indices/4FxlSFusS1OaEiV5fvfFKA/_state/state-11.st]
+	at org.elasticsearch.ExceptionsHelper.maybeThrowRuntimeAndSuppress(ExceptionsHelper.java:165) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:304) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.TransportNodesListGatewayStartedShards.nodeOperation(TransportNodesListGatewayStartedShards.java:127) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.TransportNodesListGatewayStartedShards.nodeOperation(TransportNodesListGatewayStartedShards.java:61) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.nodeOperation(TransportNodesAction.java:138) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$NodeTransportHandler.messageReceived(TransportNodesAction.java:259) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$NodeTransportHandler.messageReceived(TransportNodesAction.java:255) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:66) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:692) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:751) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-6.8.0.jar:6.8.0]
+	... 3 more
+Caused by: java.io.IOException: failed to read [id:11, file:/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0/indices/4FxlSFusS1OaEiV5fvfFKA/_state/state-11.st]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:298) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.TransportNodesListGatewayStartedShards.nodeOperation(TransportNodesListGatewayStartedShards.java:127) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.TransportNodesListGatewayStartedShards.nodeOperation(TransportNodesListGatewayStartedShards.java:61) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.nodeOperation(TransportNodesAction.java:138) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$NodeTransportHandler.messageReceived(TransportNodesAction.java:259) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$NodeTransportHandler.messageReceived(TransportNodesAction.java:255) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:66) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:692) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:751) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-6.8.0.jar:6.8.0]
+	... 3 more
+Caused by: java.nio.file.NoSuchFileException: /home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0/indices/4FxlSFusS1OaEiV5fvfFKA/_state/state-11.st
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116) ~[?:?]
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:371) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:422) ~[?:?]
+	at org.apache.lucene.store.SimpleFSDirectory.openInput(SimpleFSDirectory.java:77) ~[lucene-core-7.7.0.jar:7.7.0 8c831daf4eb41153c25ddb152501ab5bae3ea3d5 - jimczi - 2019-02-04 23:16:28]
+	at org.elasticsearch.gateway.MetaDataStateFormat.read(MetaDataStateFormat.java:182) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:294) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.TransportNodesListGatewayStartedShards.nodeOperation(TransportNodesListGatewayStartedShards.java:127) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.TransportNodesListGatewayStartedShards.nodeOperation(TransportNodesListGatewayStartedShards.java:61) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.nodeOperation(TransportNodesAction.java:138) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$NodeTransportHandler.messageReceived(TransportNodesAction.java:259) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$NodeTransportHandler.messageReceived(TransportNodesAction.java:255) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:66) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:692) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:751) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-6.8.0.jar:6.8.0]
+	... 3 more
+2022.05.23 15:41:06 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2022.05.23 15:41:07 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0]] ...]).
+2022.05.23 15:41:35 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.8gb[9.3%], shards will be relocated away from this node
+2022.05.23 15:41:35 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 15:42:05 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9.1%], shards will be relocated away from this node
+2022.05.23 15:42:35 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9.1%], shards will be relocated away from this node
+2022.05.23 15:42:35 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 15:43:05 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 15:43:35 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 15:43:35 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 15:44:05 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 15:44:35 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 15:44:35 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 15:45:05 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 15:45:21 WARN  es[][o.e.d.i.q.BoolQueryBuilder] Should clauses in the filter context will no longer automatically set the minimum should match to 1 in the next major version. You should group them in a [filter] clause or explicitly set [minimum_should_match] to 1 to restore this behavior in the next major version.
+2022.05.23 15:45:35 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 15:45:35 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 15:46:05 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 15:46:35 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 15:46:35 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 15:47:05 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 15:47:35 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 15:47:35 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 15:48:05 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 15:48:35 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 15:48:35 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 15:49:05 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 15:49:35 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9.1%], shards will be relocated away from this node
+2022.05.23 15:49:35 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 15:50:06 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 15:50:36 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 15:50:36 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 15:51:06 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 15:51:26 INFO  es[][o.e.n.Node] stopping ...
+2022.05.23 15:51:27 INFO  es[][o.e.n.Node] stopped
+2022.05.23 15:51:27 INFO  es[][o.e.n.Node] closing ...
+2022.05.23 15:51:27 INFO  es[][o.e.n.Node] closed
+2022.05.23 15:55:36 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/ (/dev/mapper/ssd-vm--69052--disk--0)]], net usable_space [2.8gb], net total_space [30.3gb], types [ext4]
+2022.05.23 15:55:36 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2022.05.23 15:55:36 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [SsDdV1RkR4KDMFpA1tPfVQ]
+2022.05.23 15:55:36 INFO  es[][o.e.n.Node] version[6.8.0], pid[2988], build[default/tar/65b6179/2019-05-15T20:06:13.172855Z], OS[Linux/5.4.128-1-pve/amd64], JVM[Private Build/OpenJDK 64-Bit Server VM/11.0.15/11.0.15+10-Ubuntu-0ubuntu0.20.04.1]
+2022.05.23 15:55:36 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/home/alumno/Descargas/sonarqube-7.8/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/home/alumno/Descargas/sonarqube-7.8/elasticsearch, -Des.path.conf=/home/alumno/Descargas/sonarqube-7.8/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+2022.05.23 15:55:37 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2022.05.23 15:55:37 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2022.05.23 15:55:37 INFO  es[][o.e.p.PluginsService] loaded module [mapper-extras]
+2022.05.23 15:55:37 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2022.05.23 15:55:37 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2022.05.23 15:55:37 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2022.05.23 15:55:37 INFO  es[][o.e.p.PluginsService] loaded module [repository-url]
+2022.05.23 15:55:37 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2022.05.23 15:55:37 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2022.05.23 15:55:39 WARN  es[][o.e.d.c.s.Settings] [http.enabled] setting was deprecated in Elasticsearch and will be removed in a future release! See the breaking changes documentation for the next major version.
+2022.05.23 15:55:40 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and host providers [settings]
+2022.05.23 15:55:41 INFO  es[][o.e.n.Node] initialized
+2022.05.23 15:55:41 INFO  es[][o.e.n.Node] starting ...
+2022.05.23 15:55:41 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2022.05.23 15:55:44 INFO  es[][o.e.c.s.MasterService] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{wrV7noXhRues9yw9cv01oQ}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}
+2022.05.23 15:55:44 INFO  es[][o.e.c.s.ClusterApplierService] new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{wrV7noXhRues9yw9cv01oQ}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: apply cluster state (from master [master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{wrV7noXhRues9yw9cv01oQ}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+2022.05.23 15:55:44 INFO  es[][o.e.n.Node] started
+2022.05.23 15:55:45 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2022.05.23 15:55:46 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0], [components][1]] ...]).
+2022.05.23 15:56:14 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.8gb[9.3%], shards will be relocated away from this node
+2022.05.23 15:56:14 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 15:56:17 INFO  es[][o.e.n.Node] stopping ...
+2022.05.23 15:56:17 INFO  es[][o.e.n.Node] stopped
+2022.05.23 15:56:17 INFO  es[][o.e.n.Node] closing ...
+2022.05.23 15:56:17 INFO  es[][o.e.n.Node] closed
+2022.05.23 15:56:36 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/ (/dev/mapper/ssd-vm--69052--disk--0)]], net usable_space [2.8gb], net total_space [30.3gb], types [ext4]
+2022.05.23 15:56:36 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2022.05.23 15:56:36 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [SsDdV1RkR4KDMFpA1tPfVQ]
+2022.05.23 15:56:36 INFO  es[][o.e.n.Node] version[6.8.0], pid[3395], build[default/tar/65b6179/2019-05-15T20:06:13.172855Z], OS[Linux/5.4.128-1-pve/amd64], JVM[Private Build/OpenJDK 64-Bit Server VM/11.0.15/11.0.15+10-Ubuntu-0ubuntu0.20.04.1]
+2022.05.23 15:56:36 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/home/alumno/Descargas/sonarqube-7.8/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/home/alumno/Descargas/sonarqube-7.8/elasticsearch, -Des.path.conf=/home/alumno/Descargas/sonarqube-7.8/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+2022.05.23 15:56:37 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2022.05.23 15:56:37 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2022.05.23 15:56:37 INFO  es[][o.e.p.PluginsService] loaded module [mapper-extras]
+2022.05.23 15:56:37 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2022.05.23 15:56:37 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2022.05.23 15:56:37 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2022.05.23 15:56:37 INFO  es[][o.e.p.PluginsService] loaded module [repository-url]
+2022.05.23 15:56:37 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2022.05.23 15:56:37 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2022.05.23 15:56:39 WARN  es[][o.e.d.c.s.Settings] [http.enabled] setting was deprecated in Elasticsearch and will be removed in a future release! See the breaking changes documentation for the next major version.
+2022.05.23 15:56:40 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and host providers [settings]
+2022.05.23 15:56:41 INFO  es[][o.e.n.Node] initialized
+2022.05.23 15:56:41 INFO  es[][o.e.n.Node] starting ...
+2022.05.23 15:56:41 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2022.05.23 15:56:44 INFO  es[][o.e.c.s.MasterService] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{KcWDKy6hQ-WKOwnGidnP2g}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}
+2022.05.23 15:56:44 INFO  es[][o.e.c.s.ClusterApplierService] new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{KcWDKy6hQ-WKOwnGidnP2g}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: apply cluster state (from master [master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{KcWDKy6hQ-WKOwnGidnP2g}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+2022.05.23 15:56:44 INFO  es[][o.e.n.Node] started
+2022.05.23 15:56:45 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2022.05.23 15:56:46 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0]] ...]).
+2022.05.23 15:57:14 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.8gb[9.3%], shards will be relocated away from this node
+2022.05.23 15:57:14 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 15:57:44 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 15:58:03 INFO  es[][o.e.n.Node] stopping ...
+2022.05.23 15:58:04 INFO  es[][o.e.n.Node] stopped
+2022.05.23 15:58:04 INFO  es[][o.e.n.Node] closing ...
+2022.05.23 15:58:04 INFO  es[][o.e.n.Node] closed
+2022.05.23 16:01:59 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/ (/dev/mapper/ssd-vm--69052--disk--0)]], net usable_space [2.8gb], net total_space [30.3gb], types [ext4]
+2022.05.23 16:01:59 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2022.05.23 16:01:59 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [SsDdV1RkR4KDMFpA1tPfVQ]
+2022.05.23 16:01:59 INFO  es[][o.e.n.Node] version[6.8.0], pid[3890], build[default/tar/65b6179/2019-05-15T20:06:13.172855Z], OS[Linux/5.4.128-1-pve/amd64], JVM[Private Build/OpenJDK 64-Bit Server VM/11.0.15/11.0.15+10-Ubuntu-0ubuntu0.20.04.1]
+2022.05.23 16:01:59 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/home/alumno/Descargas/sonarqube-7.8/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/home/alumno/Descargas/sonarqube-7.8/elasticsearch, -Des.path.conf=/home/alumno/Descargas/sonarqube-7.8/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+2022.05.23 16:01:59 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2022.05.23 16:01:59 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2022.05.23 16:01:59 INFO  es[][o.e.p.PluginsService] loaded module [mapper-extras]
+2022.05.23 16:01:59 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2022.05.23 16:01:59 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2022.05.23 16:01:59 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2022.05.23 16:01:59 INFO  es[][o.e.p.PluginsService] loaded module [repository-url]
+2022.05.23 16:01:59 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2022.05.23 16:01:59 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2022.05.23 16:02:02 WARN  es[][o.e.d.c.s.Settings] [http.enabled] setting was deprecated in Elasticsearch and will be removed in a future release! See the breaking changes documentation for the next major version.
+2022.05.23 16:02:03 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and host providers [settings]
+2022.05.23 16:02:03 INFO  es[][o.e.n.Node] initialized
+2022.05.23 16:02:03 INFO  es[][o.e.n.Node] starting ...
+2022.05.23 16:02:03 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2022.05.23 16:02:07 INFO  es[][o.e.c.s.MasterService] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{5AJYogIkTDqZj5CyDB_wMA}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}
+2022.05.23 16:02:07 INFO  es[][o.e.c.s.ClusterApplierService] new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{5AJYogIkTDqZj5CyDB_wMA}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: apply cluster state (from master [master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{5AJYogIkTDqZj5CyDB_wMA}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+2022.05.23 16:02:07 INFO  es[][o.e.n.Node] started
+2022.05.23 16:02:07 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2022.05.23 16:02:09 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][4], [metadatas][0]] ...]).
+2022.05.23 16:02:20 INFO  es[][o.e.n.Node] stopping ...
+2022.05.23 16:02:21 INFO  es[][o.e.n.Node] stopped
+2022.05.23 16:02:21 INFO  es[][o.e.n.Node] closing ...
+2022.05.23 16:02:21 INFO  es[][o.e.n.Node] closed
+2022.05.23 16:02:59 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/ (/dev/mapper/ssd-vm--69052--disk--0)]], net usable_space [2.8gb], net total_space [30.3gb], types [ext4]
+2022.05.23 16:02:59 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2022.05.23 16:02:59 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [SsDdV1RkR4KDMFpA1tPfVQ]
+2022.05.23 16:02:59 INFO  es[][o.e.n.Node] version[6.8.0], pid[4299], build[default/tar/65b6179/2019-05-15T20:06:13.172855Z], OS[Linux/5.4.128-1-pve/amd64], JVM[Private Build/OpenJDK 64-Bit Server VM/11.0.15/11.0.15+10-Ubuntu-0ubuntu0.20.04.1]
+2022.05.23 16:02:59 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/home/alumno/Descargas/sonarqube-7.8/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/home/alumno/Descargas/sonarqube-7.8/elasticsearch, -Des.path.conf=/home/alumno/Descargas/sonarqube-7.8/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+2022.05.23 16:03:00 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2022.05.23 16:03:00 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2022.05.23 16:03:00 INFO  es[][o.e.p.PluginsService] loaded module [mapper-extras]
+2022.05.23 16:03:00 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2022.05.23 16:03:00 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2022.05.23 16:03:00 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2022.05.23 16:03:00 INFO  es[][o.e.p.PluginsService] loaded module [repository-url]
+2022.05.23 16:03:00 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2022.05.23 16:03:00 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2022.05.23 16:03:04 WARN  es[][o.e.d.c.s.Settings] [http.enabled] setting was deprecated in Elasticsearch and will be removed in a future release! See the breaking changes documentation for the next major version.
+2022.05.23 16:03:05 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and host providers [settings]
+2022.05.23 16:03:06 INFO  es[][o.e.n.Node] initialized
+2022.05.23 16:03:06 INFO  es[][o.e.n.Node] starting ...
+2022.05.23 16:03:06 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2022.05.23 16:03:09 INFO  es[][o.e.c.s.MasterService] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{ovgFbGLyRxy_9PrmczTqQw}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}
+2022.05.23 16:03:09 INFO  es[][o.e.c.s.ClusterApplierService] new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{ovgFbGLyRxy_9PrmczTqQw}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: apply cluster state (from master [master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{ovgFbGLyRxy_9PrmczTqQw}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+2022.05.23 16:03:09 INFO  es[][o.e.n.Node] started
+2022.05.23 16:03:11 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2022.05.23 16:03:13 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][0]] ...]).
+2022.05.23 16:03:39 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.8gb[9.3%], shards will be relocated away from this node
+2022.05.23 16:03:39 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:04:09 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 16:04:20 INFO  es[][o.e.n.Node] stopping ...
+2022.05.23 16:04:20 INFO  es[][o.e.n.Node] stopped
+2022.05.23 16:04:20 INFO  es[][o.e.n.Node] closing ...
+2022.05.23 16:04:20 INFO  es[][o.e.n.Node] closed
+2022.05.23 16:04:39 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/ (/dev/mapper/ssd-vm--69052--disk--0)]], net usable_space [2.8gb], net total_space [30.3gb], types [ext4]
+2022.05.23 16:04:39 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2022.05.23 16:04:40 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [SsDdV1RkR4KDMFpA1tPfVQ]
+2022.05.23 16:04:40 INFO  es[][o.e.n.Node] version[6.8.0], pid[4957], build[default/tar/65b6179/2019-05-15T20:06:13.172855Z], OS[Linux/5.4.128-1-pve/amd64], JVM[Private Build/OpenJDK 64-Bit Server VM/11.0.15/11.0.15+10-Ubuntu-0ubuntu0.20.04.1]
+2022.05.23 16:04:40 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/home/alumno/Descargas/sonarqube-7.8/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/home/alumno/Descargas/sonarqube-7.8/elasticsearch, -Des.path.conf=/home/alumno/Descargas/sonarqube-7.8/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+2022.05.23 16:04:41 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2022.05.23 16:04:41 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2022.05.23 16:04:41 INFO  es[][o.e.p.PluginsService] loaded module [mapper-extras]
+2022.05.23 16:04:41 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2022.05.23 16:04:41 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2022.05.23 16:04:41 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2022.05.23 16:04:41 INFO  es[][o.e.p.PluginsService] loaded module [repository-url]
+2022.05.23 16:04:41 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2022.05.23 16:04:41 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2022.05.23 16:04:46 WARN  es[][o.e.d.c.s.Settings] [http.enabled] setting was deprecated in Elasticsearch and will be removed in a future release! See the breaking changes documentation for the next major version.
+2022.05.23 16:04:48 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and host providers [settings]
+2022.05.23 16:04:49 INFO  es[][o.e.n.Node] initialized
+2022.05.23 16:04:49 INFO  es[][o.e.n.Node] starting ...
+2022.05.23 16:04:49 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2022.05.23 16:04:53 INFO  es[][o.e.c.s.MasterService] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{8cS5hCUFQcyMJn-YT--AXQ}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}
+2022.05.23 16:04:53 INFO  es[][o.e.c.s.ClusterApplierService] new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{8cS5hCUFQcyMJn-YT--AXQ}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: apply cluster state (from master [master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{8cS5hCUFQcyMJn-YT--AXQ}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+2022.05.23 16:04:53 INFO  es[][o.e.n.Node] started
+2022.05.23 16:04:54 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2022.05.23 16:04:55 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][4], [metadatas][0], [components][1]] ...]).
+2022.05.23 16:05:23 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.8gb[9.3%], shards will be relocated away from this node
+2022.05.23 16:05:23 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:05:53 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 16:06:23 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 16:06:23 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:06:53 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 16:07:14 INFO  es[][o.e.n.Node] stopping ...
+2022.05.23 16:07:14 INFO  es[][o.e.n.Node] stopped
+2022.05.23 16:07:14 INFO  es[][o.e.n.Node] closing ...
+2022.05.23 16:07:14 INFO  es[][o.e.n.Node] closed
+2022.05.23 16:07:37 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/ (/dev/mapper/ssd-vm--69052--disk--0)]], net usable_space [2.8gb], net total_space [30.3gb], types [ext4]
+2022.05.23 16:07:37 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2022.05.23 16:07:37 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [SsDdV1RkR4KDMFpA1tPfVQ]
+2022.05.23 16:07:37 INFO  es[][o.e.n.Node] version[6.8.0], pid[5635], build[default/tar/65b6179/2019-05-15T20:06:13.172855Z], OS[Linux/5.4.128-1-pve/amd64], JVM[Private Build/OpenJDK 64-Bit Server VM/11.0.15/11.0.15+10-Ubuntu-0ubuntu0.20.04.1]
+2022.05.23 16:07:37 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/home/alumno/Descargas/sonarqube-7.8/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/home/alumno/Descargas/sonarqube-7.8/elasticsearch, -Des.path.conf=/home/alumno/Descargas/sonarqube-7.8/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+2022.05.23 16:07:38 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2022.05.23 16:07:38 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2022.05.23 16:07:38 INFO  es[][o.e.p.PluginsService] loaded module [mapper-extras]
+2022.05.23 16:07:38 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2022.05.23 16:07:38 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2022.05.23 16:07:38 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2022.05.23 16:07:38 INFO  es[][o.e.p.PluginsService] loaded module [repository-url]
+2022.05.23 16:07:38 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2022.05.23 16:07:38 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2022.05.23 16:07:41 WARN  es[][o.e.d.c.s.Settings] [http.enabled] setting was deprecated in Elasticsearch and will be removed in a future release! See the breaking changes documentation for the next major version.
+2022.05.23 16:07:42 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and host providers [settings]
+2022.05.23 16:07:43 INFO  es[][o.e.n.Node] initialized
+2022.05.23 16:07:43 INFO  es[][o.e.n.Node] starting ...
+2022.05.23 16:07:43 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2022.05.23 16:07:46 INFO  es[][o.e.c.s.MasterService] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{el8EZHZVR5CFaNmCC_oGDA}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}
+2022.05.23 16:07:47 INFO  es[][o.e.c.s.ClusterApplierService] new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{el8EZHZVR5CFaNmCC_oGDA}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: apply cluster state (from master [master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{el8EZHZVR5CFaNmCC_oGDA}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+2022.05.23 16:07:47 INFO  es[][o.e.n.Node] started
+2022.05.23 16:07:48 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2022.05.23 16:07:49 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][0]] ...]).
+2022.05.23 16:07:58 INFO  es[][o.e.n.Node] stopping ...
+2022.05.23 16:07:58 INFO  es[][o.e.n.Node] stopped
+2022.05.23 16:07:58 INFO  es[][o.e.n.Node] closing ...
+2022.05.23 16:07:58 INFO  es[][o.e.n.Node] closed
+2022.05.23 16:08:46 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/ (/dev/mapper/ssd-vm--69052--disk--0)]], net usable_space [2.9gb], net total_space [30.3gb], types [ext4]
+2022.05.23 16:08:46 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2022.05.23 16:08:46 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [SsDdV1RkR4KDMFpA1tPfVQ]
+2022.05.23 16:08:46 INFO  es[][o.e.n.Node] version[6.8.0], pid[6115], build[default/tar/65b6179/2019-05-15T20:06:13.172855Z], OS[Linux/5.4.128-1-pve/amd64], JVM[Private Build/OpenJDK 64-Bit Server VM/11.0.15/11.0.15+10-Ubuntu-0ubuntu0.20.04.1]
+2022.05.23 16:08:46 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/home/alumno/Descargas/sonarqube-7.8/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/home/alumno/Descargas/sonarqube-7.8/elasticsearch, -Des.path.conf=/home/alumno/Descargas/sonarqube-7.8/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+2022.05.23 16:08:47 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2022.05.23 16:08:47 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2022.05.23 16:08:47 INFO  es[][o.e.p.PluginsService] loaded module [mapper-extras]
+2022.05.23 16:08:47 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2022.05.23 16:08:47 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2022.05.23 16:08:47 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2022.05.23 16:08:47 INFO  es[][o.e.p.PluginsService] loaded module [repository-url]
+2022.05.23 16:08:47 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2022.05.23 16:08:47 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2022.05.23 16:08:49 WARN  es[][o.e.d.c.s.Settings] [http.enabled] setting was deprecated in Elasticsearch and will be removed in a future release! See the breaking changes documentation for the next major version.
+2022.05.23 16:08:50 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and host providers [settings]
+2022.05.23 16:08:51 INFO  es[][o.e.n.Node] initialized
+2022.05.23 16:08:51 INFO  es[][o.e.n.Node] starting ...
+2022.05.23 16:08:51 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2022.05.23 16:08:54 INFO  es[][o.e.c.s.MasterService] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{ecEo3XRkSy6fqCAtNyXxcw}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}
+2022.05.23 16:08:54 INFO  es[][o.e.c.s.ClusterApplierService] new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{ecEo3XRkSy6fqCAtNyXxcw}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: apply cluster state (from master [master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{ecEo3XRkSy6fqCAtNyXxcw}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+2022.05.23 16:08:54 INFO  es[][o.e.n.Node] started
+2022.05.23 16:08:55 INFO  es[][o.e.n.Node] stopping ...
+2022.05.23 16:08:55 INFO  es[][o.e.n.Node] stopped
+2022.05.23 16:08:55 INFO  es[][o.e.n.Node] closing ...
+2022.05.23 16:08:55 WARN  es[][o.e.g.Gateway] recovering index [components/q3wpjC5ST_eicTSfoksETA] failed - recovering as closed
+org.elasticsearch.common.util.concurrent.EsRejectedExecutionException: rejected execution of java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@7a893871[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@527c95da[Wrapped task = [threaded] trim_translog]] on org.elasticsearch.threadpool.Scheduler$SafeScheduledThreadPoolExecutor@14a4c7b7[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 8]
+	at org.elasticsearch.common.util.concurrent.EsAbortPolicy.rejectedExecution(EsAbortPolicy.java:48) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:340) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:562) ~[?:?]
+	at org.elasticsearch.threadpool.ThreadPool.schedule(ThreadPool.java:354) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.AbstractAsyncTask.rescheduleIfNecessary(AbstractAsyncTask.java:94) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService$BaseAsyncTask.<init>(IndexService.java:825) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService$AsyncTrimTranslogTask.<init>(IndexService.java:884) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService.<init>(IndexService.java:198) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexModule.newIndexService(IndexModule.java:402) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.indices.IndicesService.createIndexService(IndicesService.java:526) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.indices.IndicesService.verifyIndexMetadata(IndicesService.java:599) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.Gateway.performStateRecovery(Gateway.java:129) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.GatewayService$1.doRun(GatewayService.java:227) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:751) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-6.8.0.jar:6.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2022.05.23 16:08:55 WARN  es[][o.e.g.Gateway] recovering index [metadatas/vmgHMcy5TmyXE4fK5enStw] failed - recovering as closed
+org.elasticsearch.common.util.concurrent.EsRejectedExecutionException: rejected execution of java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@3f904260[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@182cf758[Wrapped task = [threaded] trim_translog]] on org.elasticsearch.threadpool.Scheduler$SafeScheduledThreadPoolExecutor@14a4c7b7[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 8]
+	at org.elasticsearch.common.util.concurrent.EsAbortPolicy.rejectedExecution(EsAbortPolicy.java:48) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:340) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:562) ~[?:?]
+	at org.elasticsearch.threadpool.ThreadPool.schedule(ThreadPool.java:354) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.AbstractAsyncTask.rescheduleIfNecessary(AbstractAsyncTask.java:94) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService$BaseAsyncTask.<init>(IndexService.java:825) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService$AsyncTrimTranslogTask.<init>(IndexService.java:884) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService.<init>(IndexService.java:198) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexModule.newIndexService(IndexModule.java:402) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.indices.IndicesService.createIndexService(IndicesService.java:526) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.indices.IndicesService.verifyIndexMetadata(IndicesService.java:599) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.Gateway.performStateRecovery(Gateway.java:129) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.GatewayService$1.doRun(GatewayService.java:227) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:751) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-6.8.0.jar:6.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2022.05.23 16:08:55 WARN  es[][o.e.g.Gateway] recovering index [users/nUgeSW4xTC658_Ms0tDC0g] failed - recovering as closed
+org.elasticsearch.common.util.concurrent.EsRejectedExecutionException: rejected execution of java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@27e698db[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@61080e0c[Wrapped task = [threaded] refresh]] on org.elasticsearch.threadpool.Scheduler$SafeScheduledThreadPoolExecutor@14a4c7b7[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 8]
+	at org.elasticsearch.common.util.concurrent.EsAbortPolicy.rejectedExecution(EsAbortPolicy.java:48) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:340) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:562) ~[?:?]
+	at org.elasticsearch.threadpool.ThreadPool.schedule(ThreadPool.java:354) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.AbstractAsyncTask.rescheduleIfNecessary(AbstractAsyncTask.java:94) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService$BaseAsyncTask.<init>(IndexService.java:825) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService$AsyncRefreshTask.<init>(IndexService.java:862) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService.<init>(IndexService.java:197) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexModule.newIndexService(IndexModule.java:402) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.indices.IndicesService.createIndexService(IndicesService.java:526) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.indices.IndicesService.verifyIndexMetadata(IndicesService.java:599) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.Gateway.performStateRecovery(Gateway.java:129) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.GatewayService$1.doRun(GatewayService.java:227) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:751) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-6.8.0.jar:6.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2022.05.23 16:08:55 WARN  es[][o.e.g.Gateway] recovering index [issues/fxSjrZ-dSeOZMI2qYsze_A] failed - recovering as closed
+org.elasticsearch.common.util.concurrent.EsRejectedExecutionException: rejected execution of java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@65b1e77b[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@588f2d48[Wrapped task = [threaded] trim_translog]] on org.elasticsearch.threadpool.Scheduler$SafeScheduledThreadPoolExecutor@14a4c7b7[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 8]
+	at org.elasticsearch.common.util.concurrent.EsAbortPolicy.rejectedExecution(EsAbortPolicy.java:48) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:340) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:562) ~[?:?]
+	at org.elasticsearch.threadpool.ThreadPool.schedule(ThreadPool.java:354) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.AbstractAsyncTask.rescheduleIfNecessary(AbstractAsyncTask.java:94) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService$BaseAsyncTask.<init>(IndexService.java:825) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService$AsyncTrimTranslogTask.<init>(IndexService.java:884) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService.<init>(IndexService.java:198) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexModule.newIndexService(IndexModule.java:402) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.indices.IndicesService.createIndexService(IndicesService.java:526) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.indices.IndicesService.verifyIndexMetadata(IndicesService.java:599) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.Gateway.performStateRecovery(Gateway.java:129) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.GatewayService$1.doRun(GatewayService.java:227) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:751) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-6.8.0.jar:6.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2022.05.23 16:08:55 WARN  es[][o.e.g.Gateway] recovering index [views/HEABJlUwRKCaTXFddoUzcQ] failed - recovering as closed
+org.elasticsearch.common.util.concurrent.EsRejectedExecutionException: rejected execution of java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@57db85b9[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@4468edaf[Wrapped task = [threaded] refresh]] on org.elasticsearch.threadpool.Scheduler$SafeScheduledThreadPoolExecutor@14a4c7b7[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 8]
+	at org.elasticsearch.common.util.concurrent.EsAbortPolicy.rejectedExecution(EsAbortPolicy.java:48) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:340) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:562) ~[?:?]
+	at org.elasticsearch.threadpool.ThreadPool.schedule(ThreadPool.java:354) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.AbstractAsyncTask.rescheduleIfNecessary(AbstractAsyncTask.java:94) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService$BaseAsyncTask.<init>(IndexService.java:825) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService$AsyncRefreshTask.<init>(IndexService.java:862) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService.<init>(IndexService.java:197) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexModule.newIndexService(IndexModule.java:402) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.indices.IndicesService.createIndexService(IndicesService.java:526) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.indices.IndicesService.verifyIndexMetadata(IndicesService.java:599) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.Gateway.performStateRecovery(Gateway.java:129) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.GatewayService$1.doRun(GatewayService.java:227) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:751) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-6.8.0.jar:6.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2022.05.23 16:08:55 WARN  es[][o.e.g.Gateway] recovering index [rules/CIaQa2mkTE2ibsBhHTUgpA] failed - recovering as closed
+org.elasticsearch.common.util.concurrent.EsRejectedExecutionException: rejected execution of java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask@1cffbce0[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@761f1767[Wrapped task = [threaded] trim_translog]] on org.elasticsearch.threadpool.Scheduler$SafeScheduledThreadPoolExecutor@14a4c7b7[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 8]
+	at org.elasticsearch.common.util.concurrent.EsAbortPolicy.rejectedExecution(EsAbortPolicy.java:48) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor.delayedExecute(ScheduledThreadPoolExecutor.java:340) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor.schedule(ScheduledThreadPoolExecutor.java:562) ~[?:?]
+	at org.elasticsearch.threadpool.ThreadPool.schedule(ThreadPool.java:354) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.AbstractAsyncTask.rescheduleIfNecessary(AbstractAsyncTask.java:94) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService$BaseAsyncTask.<init>(IndexService.java:825) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService$AsyncTrimTranslogTask.<init>(IndexService.java:884) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexService.<init>(IndexService.java:198) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.index.IndexModule.newIndexService(IndexModule.java:402) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.indices.IndicesService.createIndexService(IndicesService.java:526) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.indices.IndicesService.verifyIndexMetadata(IndicesService.java:599) ~[elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.Gateway.performStateRecovery(Gateway.java:129) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.gateway.GatewayService$1.doRun(GatewayService.java:227) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:751) [elasticsearch-6.8.0.jar:6.8.0]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-6.8.0.jar:6.8.0]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2022.05.23 16:08:55 INFO  es[][o.e.n.Node] closed
+2022.05.23 16:09:16 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/ (/dev/mapper/ssd-vm--69052--disk--0)]], net usable_space [2.9gb], net total_space [30.3gb], types [ext4]
+2022.05.23 16:09:16 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2022.05.23 16:09:16 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [SsDdV1RkR4KDMFpA1tPfVQ]
+2022.05.23 16:09:16 INFO  es[][o.e.n.Node] version[6.8.0], pid[6515], build[default/tar/65b6179/2019-05-15T20:06:13.172855Z], OS[Linux/5.4.128-1-pve/amd64], JVM[Private Build/OpenJDK 64-Bit Server VM/11.0.15/11.0.15+10-Ubuntu-0ubuntu0.20.04.1]
+2022.05.23 16:09:16 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/home/alumno/Descargas/sonarqube-7.8/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/home/alumno/Descargas/sonarqube-7.8/elasticsearch, -Des.path.conf=/home/alumno/Descargas/sonarqube-7.8/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+2022.05.23 16:09:17 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2022.05.23 16:09:17 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2022.05.23 16:09:17 INFO  es[][o.e.p.PluginsService] loaded module [mapper-extras]
+2022.05.23 16:09:17 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2022.05.23 16:09:17 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2022.05.23 16:09:17 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2022.05.23 16:09:17 INFO  es[][o.e.p.PluginsService] loaded module [repository-url]
+2022.05.23 16:09:17 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2022.05.23 16:09:17 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2022.05.23 16:09:19 WARN  es[][o.e.d.c.s.Settings] [http.enabled] setting was deprecated in Elasticsearch and will be removed in a future release! See the breaking changes documentation for the next major version.
+2022.05.23 16:09:20 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and host providers [settings]
+2022.05.23 16:09:21 INFO  es[][o.e.n.Node] initialized
+2022.05.23 16:09:21 INFO  es[][o.e.n.Node] starting ...
+2022.05.23 16:09:21 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2022.05.23 16:09:24 INFO  es[][o.e.c.s.MasterService] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{V6I_UxczTYaY0_T9Jo_XHA}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}
+2022.05.23 16:09:24 INFO  es[][o.e.c.s.ClusterApplierService] new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{V6I_UxczTYaY0_T9Jo_XHA}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: apply cluster state (from master [master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{V6I_UxczTYaY0_T9Jo_XHA}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+2022.05.23 16:09:24 INFO  es[][o.e.n.Node] started
+2022.05.23 16:09:25 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2022.05.23 16:09:26 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0]] ...]).
+2022.05.23 16:09:54 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.8gb[9.4%], shards will be relocated away from this node
+2022.05.23 16:09:54 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:10:16 INFO  es[][o.e.n.Node] stopping ...
+2022.05.23 16:10:17 INFO  es[][o.e.n.Node] stopped
+2022.05.23 16:10:17 INFO  es[][o.e.n.Node] closing ...
+2022.05.23 16:10:17 INFO  es[][o.e.n.Node] closed
+2022.05.23 16:13:22 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/ (/dev/mapper/ssd-vm--69052--disk--0)]], net usable_space [2.8gb], net total_space [30.3gb], types [ext4]
+2022.05.23 16:13:22 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2022.05.23 16:13:22 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [SsDdV1RkR4KDMFpA1tPfVQ]
+2022.05.23 16:13:22 INFO  es[][o.e.n.Node] version[6.8.0], pid[6956], build[default/tar/65b6179/2019-05-15T20:06:13.172855Z], OS[Linux/5.4.128-1-pve/amd64], JVM[Private Build/OpenJDK 64-Bit Server VM/11.0.15/11.0.15+10-Ubuntu-0ubuntu0.20.04.1]
+2022.05.23 16:13:22 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/home/alumno/Descargas/sonarqube-7.8/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/home/alumno/Descargas/sonarqube-7.8/elasticsearch, -Des.path.conf=/home/alumno/Descargas/sonarqube-7.8/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+2022.05.23 16:13:23 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2022.05.23 16:13:23 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2022.05.23 16:13:23 INFO  es[][o.e.p.PluginsService] loaded module [mapper-extras]
+2022.05.23 16:13:23 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2022.05.23 16:13:23 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2022.05.23 16:13:23 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2022.05.23 16:13:23 INFO  es[][o.e.p.PluginsService] loaded module [repository-url]
+2022.05.23 16:13:23 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2022.05.23 16:13:23 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2022.05.23 16:13:26 WARN  es[][o.e.d.c.s.Settings] [http.enabled] setting was deprecated in Elasticsearch and will be removed in a future release! See the breaking changes documentation for the next major version.
+2022.05.23 16:13:27 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and host providers [settings]
+2022.05.23 16:13:28 INFO  es[][o.e.n.Node] initialized
+2022.05.23 16:13:28 INFO  es[][o.e.n.Node] starting ...
+2022.05.23 16:13:28 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2022.05.23 16:13:31 INFO  es[][o.e.c.s.MasterService] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{p7_6Rg_rSEqY9rSGjovtLw}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}
+2022.05.23 16:13:31 INFO  es[][o.e.c.s.ClusterApplierService] new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{p7_6Rg_rSEqY9rSGjovtLw}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: apply cluster state (from master [master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{p7_6Rg_rSEqY9rSGjovtLw}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+2022.05.23 16:13:31 INFO  es[][o.e.n.Node] started
+2022.05.23 16:13:32 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2022.05.23 16:13:34 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0]] ...]).
+2022.05.23 16:14:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.8gb[9.4%], shards will be relocated away from this node
+2022.05.23 16:14:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:14:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9.1%], shards will be relocated away from this node
+2022.05.23 16:14:41 WARN  es[][o.e.d.i.q.BoolQueryBuilder] Should clauses in the filter context will no longer automatically set the minimum should match to 1 in the next major version. You should group them in a [filter] clause or explicitly set [minimum_should_match] to 1 to restore this behavior in the next major version.
+2022.05.23 16:15:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 16:15:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:15:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Descargas/sonarqube-7.8/data/es6/nodes/0] free: 2.7gb[9%], shards will be relocated away from this node
+2022.05.23 16:16:22 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/ (/dev/mapper/ssd-vm--69052--disk--0)]], net usable_space [2.2gb], net total_space [30.3gb], types [ext4]
+2022.05.23 16:16:22 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2022.05.23 16:16:22 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [SsDdV1RkR4KDMFpA1tPfVQ]
+2022.05.23 16:16:22 INFO  es[][o.e.n.Node] version[6.8.0], pid[7633], build[default/tar/65b6179/2019-05-15T20:06:13.172855Z], OS[Linux/5.4.128-1-pve/amd64], JVM[Private Build/OpenJDK 64-Bit Server VM/11.0.15/11.0.15+10-Ubuntu-0ubuntu0.20.04.1]
+2022.05.23 16:16:22 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/home/alumno/Escritorio/GPI/sonarqube-7.8/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/home/alumno/Escritorio/GPI/sonarqube-7.8/elasticsearch, -Des.path.conf=/home/alumno/Escritorio/GPI/sonarqube-7.8/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+2022.05.23 16:16:23 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2022.05.23 16:16:23 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2022.05.23 16:16:23 INFO  es[][o.e.p.PluginsService] loaded module [mapper-extras]
+2022.05.23 16:16:23 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2022.05.23 16:16:23 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2022.05.23 16:16:23 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2022.05.23 16:16:23 INFO  es[][o.e.p.PluginsService] loaded module [repository-url]
+2022.05.23 16:16:23 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2022.05.23 16:16:23 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2022.05.23 16:16:26 WARN  es[][o.e.d.c.s.Settings] [http.enabled] setting was deprecated in Elasticsearch and will be removed in a future release! See the breaking changes documentation for the next major version.
+2022.05.23 16:16:27 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and host providers [settings]
+2022.05.23 16:16:28 INFO  es[][o.e.n.Node] initialized
+2022.05.23 16:16:28 INFO  es[][o.e.n.Node] starting ...
+2022.05.23 16:16:28 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2022.05.23 16:16:31 INFO  es[][o.e.c.s.MasterService] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{ddK6kWg4SYmnGzHTT_NttQ}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}
+2022.05.23 16:16:31 INFO  es[][o.e.c.s.ClusterApplierService] new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{ddK6kWg4SYmnGzHTT_NttQ}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: apply cluster state (from master [master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{ddK6kWg4SYmnGzHTT_NttQ}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+2022.05.23 16:16:32 INFO  es[][o.e.n.Node] started
+2022.05.23 16:16:32 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2022.05.23 16:16:34 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[components][4]] ...]).
+2022.05.23 16:17:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 2.2gb[7.3%], shards will be relocated away from this node
+2022.05.23 16:17:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:17:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 2.1gb[7%], shards will be relocated away from this node
+2022.05.23 16:18:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 2.1gb[7%], shards will be relocated away from this node
+2022.05.23 16:18:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:18:02 WARN  es[][o.e.d.i.q.BoolQueryBuilder] Should clauses in the filter context will no longer automatically set the minimum should match to 1 in the next major version. You should group them in a [filter] clause or explicitly set [minimum_should_match] to 1 to restore this behavior in the next major version.
+2022.05.23 16:18:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 2.1gb[7%], shards will be relocated away from this node
+2022.05.23 16:19:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 2.1gb[7%], shards will be relocated away from this node
+2022.05.23 16:19:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:19:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 2.1gb[7%], shards will be relocated away from this node
+2022.05.23 16:20:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 2.1gb[7%], shards will be relocated away from this node
+2022.05.23 16:20:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:20:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:21:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:21:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:21:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:22:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:22:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:22:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:23:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:23:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:23:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:24:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:24:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:24:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:25:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:25:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:25:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:26:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:26:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:26:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:27:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:27:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:27:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:28:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:28:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:28:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:29:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:29:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:29:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:30:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:30:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:30:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:31:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:31:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:31:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:32:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:32:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:32:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:33:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:33:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:33:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:34:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:34:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:34:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:35:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:35:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:35:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:36:02 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:36:02 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:36:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:37:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:37:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:37:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:38:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:38:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:38:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:39:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.8gb[6.1%], shards will be relocated away from this node
+2022.05.23 16:39:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:39:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.9%], shards will be relocated away from this node
+2022.05.23 16:40:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.9%], shards will be relocated away from this node
+2022.05.23 16:40:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:40:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.9%], shards will be relocated away from this node
+2022.05.23 16:41:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.9%], shards will be relocated away from this node
+2022.05.23 16:41:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:41:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.9%], shards will be relocated away from this node
+2022.05.23 16:42:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.9%], shards will be relocated away from this node
+2022.05.23 16:42:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:42:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.8%], shards will be relocated away from this node
+2022.05.23 16:43:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.7%], shards will be relocated away from this node
+2022.05.23 16:43:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:43:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.7%], shards will be relocated away from this node
+2022.05.23 16:44:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.7%], shards will be relocated away from this node
+2022.05.23 16:44:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:44:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.6%], shards will be relocated away from this node
+2022.05.23 16:45:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.6%], shards will be relocated away from this node
+2022.05.23 16:45:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:45:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.6%], shards will be relocated away from this node
+2022.05.23 16:46:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.6%], shards will be relocated away from this node
+2022.05.23 16:46:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:46:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.6%], shards will be relocated away from this node
+2022.05.23 16:47:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.6%], shards will be relocated away from this node
+2022.05.23 16:47:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:47:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.6%], shards will be relocated away from this node
+2022.05.23 16:48:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.6%], shards will be relocated away from this node
+2022.05.23 16:48:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:48:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.6%], shards will be relocated away from this node
+2022.05.23 16:49:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.6%], shards will be relocated away from this node
+2022.05.23 16:49:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:49:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.6%], shards will be relocated away from this node
+2022.05.23 16:50:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.6%], shards will be relocated away from this node
+2022.05.23 16:50:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:50:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.6%], shards will be relocated away from this node
+2022.05.23 16:51:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.6%], shards will be relocated away from this node
+2022.05.23 16:51:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:51:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.6%], shards will be relocated away from this node
+2022.05.23 16:52:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.6%], shards will be relocated away from this node
+2022.05.23 16:52:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:52:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.6%], shards will be relocated away from this node
+2022.05.23 16:53:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.7gb[5.8%], shards will be relocated away from this node
+2022.05.23 16:53:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:53:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.6gb[5.4%], shards will be relocated away from this node
+2022.05.23 16:54:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.6gb[5.4%], shards will be relocated away from this node
+2022.05.23 16:54:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:54:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.6gb[5.4%], shards will be relocated away from this node
+2022.05.23 16:55:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.6gb[5.4%], shards will be relocated away from this node
+2022.05.23 16:55:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:55:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.6gb[5.4%], shards will be relocated away from this node
+2022.05.23 16:56:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.6gb[5.4%], shards will be relocated away from this node
+2022.05.23 16:56:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:56:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.6gb[5.4%], shards will be relocated away from this node
+2022.05.23 16:57:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.6gb[5.3%], shards will be relocated away from this node
+2022.05.23 16:57:03 INFO  es[][o.e.c.r.a.DiskThresholdMonitor] rerouting shards: [high disk watermark exceeded on one or more nodes]
+2022.05.23 16:57:33 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] high disk watermark [90%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.6gb[5.3%], shards will be relocated away from this node
+2022.05.23 16:58:03 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.3gb[4.4%], all indices on this node will be marked read-only
+2022.05.23 16:58:43 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.3gb[4.4%], all indices on this node will be marked read-only
+2022.05.23 16:59:15 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.3gb[4.4%], all indices on this node will be marked read-only
+2022.05.23 16:59:48 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.3gb[4.4%], all indices on this node will be marked read-only
+2022.05.23 17:00:39 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.3gb[4.4%], all indices on this node will be marked read-only
+2022.05.23 17:21:19 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[/ (/dev/mapper/ssd-vm--69052--disk--0)]], net usable_space [1.3gb], net total_space [30.3gb], types [ext4]
+2022.05.23 17:21:19 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2022.05.23 17:21:19 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [SsDdV1RkR4KDMFpA1tPfVQ]
+2022.05.23 17:21:19 INFO  es[][o.e.n.Node] version[6.8.0], pid[2660], build[default/tar/65b6179/2019-05-15T20:06:13.172855Z], OS[Linux/5.4.128-1-pve/amd64], JVM[Private Build/OpenJDK 64-Bit Server VM/11.0.15/11.0.15+10-Ubuntu-0ubuntu0.20.04.1]
+2022.05.23 17:21:19 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/home/alumno/Escritorio/GPI/sonarqube-7.8/temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Xms512m, -Xmx512m, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/home/alumno/Escritorio/GPI/sonarqube-7.8/elasticsearch, -Des.path.conf=/home/alumno/Escritorio/GPI/sonarqube-7.8/temp/conf/es, -Des.distribution.flavor=default, -Des.distribution.type=tar]
+2022.05.23 17:21:20 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2022.05.23 17:21:20 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2022.05.23 17:21:20 INFO  es[][o.e.p.PluginsService] loaded module [mapper-extras]
+2022.05.23 17:21:20 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2022.05.23 17:21:20 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2022.05.23 17:21:20 INFO  es[][o.e.p.PluginsService] loaded module [reindex]
+2022.05.23 17:21:20 INFO  es[][o.e.p.PluginsService] loaded module [repository-url]
+2022.05.23 17:21:20 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2022.05.23 17:21:20 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2022.05.23 17:21:23 WARN  es[][o.e.d.c.s.Settings] [http.enabled] setting was deprecated in Elasticsearch and will be removed in a future release! See the breaking changes documentation for the next major version.
+2022.05.23 17:21:25 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and host providers [settings]
+2022.05.23 17:21:25 INFO  es[][o.e.n.Node] initialized
+2022.05.23 17:21:25 INFO  es[][o.e.n.Node] starting ...
+2022.05.23 17:21:26 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2022.05.23 17:21:29 INFO  es[][o.e.c.s.MasterService] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{9B7kS6L3RZ6IpPJK-DI29w}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}
+2022.05.23 17:21:29 INFO  es[][o.e.c.s.ClusterApplierService] new_master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{9B7kS6L3RZ6IpPJK-DI29w}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube}, reason: apply cluster state (from master [master {sonarqube}{SsDdV1RkR4KDMFpA1tPfVQ}{9B7kS6L3RZ6IpPJK-DI29w}{127.0.0.1}{127.0.0.1:9001}{rack_id=sonarqube} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+2022.05.23 17:21:29 INFO  es[][o.e.n.Node] started
+2022.05.23 17:21:29 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2022.05.23 17:21:31 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0], [components][2]] ...]).
+2022.05.23 17:21:59 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.3gb[4.2%], all indices on this node will be marked read-only
+2022.05.23 17:22:29 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.3gb[4.2%], all indices on this node will be marked read-only
+2022.05.23 17:23:00 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.3gb[4.2%], all indices on this node will be marked read-only
+2022.05.23 17:23:32 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.3gb[4.2%], all indices on this node will be marked read-only
+2022.05.23 17:24:07 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.3gb[4.2%], all indices on this node will be marked read-only
+2022.05.23 17:24:38 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.3gb[4.2%], all indices on this node will be marked read-only
+2022.05.23 17:25:38 WARN  es[][o.e.c.InternalClusterInfoService] Failed to update shard information for ClusterInfoUpdateJob within 15s timeout
+2022.05.23 17:25:43 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.3gb[4.2%], all indices on this node will be marked read-only
+2022.05.23 17:26:24 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.3gb[4.2%], all indices on this node will be marked read-only
+2022.05.23 17:26:55 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.3gb[4.2%], all indices on this node will be marked read-only
+2022.05.23 17:27:25 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.2gb[4%], all indices on this node will be marked read-only
+2022.05.23 17:27:55 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.2gb[4%], all indices on this node will be marked read-only
+2022.05.23 17:28:26 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.2gb[4%], all indices on this node will be marked read-only
+2022.05.23 17:28:57 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.2gb[4%], all indices on this node will be marked read-only
+2022.05.23 17:29:29 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.2gb[4%], all indices on this node will be marked read-only
+2022.05.23 17:30:06 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.2gb[4%], all indices on this node will be marked read-only
+2022.05.23 17:30:56 WARN  es[][o.e.c.InternalClusterInfoService] Failed to update shard information for ClusterInfoUpdateJob within 15s timeout
+2022.05.23 17:30:58 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.2gb[4%], all indices on this node will be marked read-only
+2022.05.23 17:31:57 WARN  es[][o.e.c.InternalClusterInfoService] Failed to update shard information for ClusterInfoUpdateJob within 15s timeout
+2022.05.23 17:31:58 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.2gb[4%], all indices on this node will be marked read-only
+2022.05.23 17:32:50 WARN  es[][o.e.c.InternalClusterInfoService] Failed to update shard information for ClusterInfoUpdateJob within 15s timeout
+2022.05.23 17:32:54 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.2gb[4%], all indices on this node will be marked read-only
+2022.05.23 17:33:45 WARN  es[][o.e.c.InternalClusterInfoService] Failed to update shard information for ClusterInfoUpdateJob within 15s timeout
+2022.05.23 17:33:48 WARN  es[][o.e.c.r.a.DiskThresholdMonitor] flood stage disk watermark [95%] exceeded on [SsDdV1RkR4KDMFpA1tPfVQ][sonarqube][/home/alumno/Escritorio/GPI/sonarqube-7.8/data/es6/nodes/0] free: 1.2gb[4%], all indices on this node will be marked read-only

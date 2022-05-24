@@ -1,0 +1,667 @@
+2022.05.23 15:41:34 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2022.05.23 15:41:34 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2022.05.23 15:41:35 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2022.05.23 15:41:35 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2022.05.23 15:41:35 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2022.05.23 15:41:35 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2022.05.23 15:41:37 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2022.05.23 15:41:37 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2022.05.23 15:41:37 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2022.05.23 15:41:39 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /home/alumno/Descargas/sonarqube-7.8
+2022.05.23 15:41:39 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2022.05.23 15:41:41 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2022.05.23 15:41:41 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2022.05.23 15:45:18 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=gpi2 | type=REPORT | id=AYDxKjVjV9v-u1e9Y8f4
+2022.05.23 15:45:18 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=35ms
+2022.05.23 15:45:18 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=10ms
+2022.05.23 15:45:18 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=33ms
+2022.05.23 15:45:18 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Execute DB migrations for current project | status=SUCCESS | time=10ms
+2022.05.23 15:45:18 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2022.05.23 15:45:19 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=108ms
+2022.05.23 15:45:19 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+2022.05.23 15:45:19 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Verify billing | status=SUCCESS | time=0ms
+2022.05.23 15:45:19 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=14 | status=SUCCESS | time=66ms
+2022.05.23 15:45:19 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=5ms
+2022.05.23 15:45:20 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=1621ms
+2022.05.23 15:45:20 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=41ms
+2022.05.23 15:45:20 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=33ms
+2022.05.23 15:45:20 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Detect file moves | reportFiles=7 | dbFiles=7 | addedFiles=0 | status=SUCCESS | time=20ms
+2022.05.23 15:45:20 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=0 | status=SUCCESS | time=4ms
+2022.05.23 15:45:20 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+2022.05.23 15:45:20 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=24ms
+2022.05.23 15:45:20 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=39ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=16ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=1ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Copy custom measures | status=SUCCESS | time=8ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=10ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=2ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=19ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=1ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=3ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=2ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=69ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=360ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=0ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=38ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=11ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=15ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=16ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=33ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=15ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=1ms
+2022.05.23 15:45:21 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=77 | status=SUCCESS | time=47ms
+2022.05.23 15:45:22 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=654 | status=SUCCESS | time=460ms
+2022.05.23 15:45:22 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=1ms
+2022.05.23 15:45:22 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=0ms
+2022.05.23 15:45:22 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Persist issues | inserts=0 | updates=3 | merged=0 | untouched=0 | status=SUCCESS | time=43ms
+2022.05.23 15:45:22 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=5ms
+2022.05.23 15:45:22 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=18ms
+2022.05.23 15:45:22 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=120ms
+2022.05.23 15:45:22 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+2022.05.23 15:45:22 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=3ms
+2022.05.23 15:45:22 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=4ms
+2022.05.23 15:45:22 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=172ms
+2022.05.23 15:45:23 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=SUCCESS | time=807ms
+2022.05.23 15:45:23 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Send issue notifications | newIssuesNotifs=0 | newIssuesDeliveries=0 | myNewIssuesNotifs=0 | myNewIssuesDeliveries=0 | changesNotifs=0 | changesDeliveries=0 | status=SUCCESS | time=4ms
+2022.05.23 15:45:23 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
+2022.05.23 15:45:23 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
+2022.05.23 15:45:23 INFO  ce[AYDxKjVjV9v-u1e9Y8f4][o.s.c.t.CeWorkerImpl] Executed task | project=gpi2 | type=REPORT | id=AYDxKjVjV9v-u1e9Y8f4 | status=SUCCESS | time=5271ms
+2022.05.23 15:48:01 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=webview | type=REPORT | id=AYDxLLRQV9v-u1e9Y8f_
+2022.05.23 15:48:01 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=20ms
+2022.05.23 15:48:01 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=7ms
+2022.05.23 15:48:01 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=2ms
+2022.05.23 15:48:01 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Execute DB migrations for current project | status=SUCCESS | time=1ms
+2022.05.23 15:48:01 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2022.05.23 15:48:01 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=12ms
+2022.05.23 15:48:01 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+2022.05.23 15:48:01 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Verify billing | status=SUCCESS | time=0ms
+2022.05.23 15:48:01 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=14 | status=SUCCESS | time=7ms
+2022.05.23 15:48:01 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=1ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=1831ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=6ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=0ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Detect file moves | status=SUCCESS | time=0ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=0 | status=SUCCESS | time=0ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=3ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=1ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=1ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=1ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Copy custom measures | status=SUCCESS | time=1ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=0ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=0ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=1ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=0ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=1ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=0ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=1ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=78ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=0ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=0ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=1ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=1ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=0ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=19ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=2ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=0ms
+2022.05.23 15:48:03 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=49 | status=SUCCESS | time=12ms
+2022.05.23 15:48:04 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=399 | status=SUCCESS | time=178ms
+2022.05.23 15:48:04 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=0ms
+2022.05.23 15:48:04 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=0ms
+2022.05.23 15:48:04 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Persist issues | inserts=3 | updates=0 | merged=0 | untouched=0 | status=SUCCESS | time=60ms
+2022.05.23 15:48:04 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=3ms
+2022.05.23 15:48:04 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=3ms
+2022.05.23 15:48:04 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=106ms
+2022.05.23 15:48:04 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+2022.05.23 15:48:04 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=2ms
+2022.05.23 15:48:04 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=5ms
+2022.05.23 15:48:04 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=38ms
+2022.05.23 15:48:04 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=SUCCESS | time=406ms
+2022.05.23 15:48:04 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Send issue notifications | newIssuesNotifs=0 | newIssuesDeliveries=0 | myNewIssuesNotifs=0 | myNewIssuesDeliveries=0 | changesNotifs=0 | changesDeliveries=0 | status=SUCCESS | time=2ms
+2022.05.23 15:48:04 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
+2022.05.23 15:48:04 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
+2022.05.23 15:48:04 INFO  ce[AYDxLLRQV9v-u1e9Y8f_][o.s.c.t.CeWorkerImpl] Executed task | project=webview | type=REPORT | id=AYDxLLRQV9v-u1e9Y8f_ | status=SUCCESS | time=2917ms
+2022.05.23 15:49:23 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=webview | type=REPORT | id=AYDxLfY2V9v-u1e9Y8gM
+2022.05.23 15:49:23 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=9ms
+2022.05.23 15:49:23 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=4ms
+2022.05.23 15:49:23 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=1ms
+2022.05.23 15:49:23 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Execute DB migrations for current project | status=SUCCESS | time=2ms
+2022.05.23 15:49:23 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2022.05.23 15:49:23 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=11ms
+2022.05.23 15:49:23 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+2022.05.23 15:49:23 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Verify billing | status=SUCCESS | time=1ms
+2022.05.23 15:49:23 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=14 | status=SUCCESS | time=8ms
+2022.05.23 15:49:23 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=2ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=1486ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=10ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=0ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Detect file moves | status=SUCCESS | time=0ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=0 | status=SUCCESS | time=1ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=3ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=1ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=4ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=4ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Copy custom measures | status=SUCCESS | time=2ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=5ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=1ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=1ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=1ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=1ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=1ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=2ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=63ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=0ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=0ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=0ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=1ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=1ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=13ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=1ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=1ms
+2022.05.23 15:49:24 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=49 | status=SUCCESS | time=8ms
+2022.05.23 15:49:25 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=399 | status=SUCCESS | time=223ms
+2022.05.23 15:49:25 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=0ms
+2022.05.23 15:49:25 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=0ms
+2022.05.23 15:49:25 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Persist issues | inserts=3 | updates=0 | merged=0 | untouched=0 | status=SUCCESS | time=19ms
+2022.05.23 15:49:25 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=11ms
+2022.05.23 15:49:25 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=3ms
+2022.05.23 15:49:25 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=184ms
+2022.05.23 15:49:25 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+2022.05.23 15:49:25 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=2ms
+2022.05.23 15:49:25 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=14ms
+2022.05.23 15:49:25 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=104ms
+2022.05.23 15:49:26 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=SUCCESS | time=499ms
+2022.05.23 15:49:26 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Send issue notifications | newIssuesNotifs=0 | newIssuesDeliveries=0 | myNewIssuesNotifs=0 | myNewIssuesDeliveries=0 | changesNotifs=0 | changesDeliveries=0 | status=SUCCESS | time=2ms
+2022.05.23 15:49:26 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
+2022.05.23 15:49:26 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
+2022.05.23 15:49:26 INFO  ce[AYDxLfY2V9v-u1e9Y8gM][o.s.c.t.CeWorkerImpl] Executed task | project=webview | type=REPORT | id=AYDxLfY2V9v-u1e9Y8gM | status=SUCCESS | time=2857ms
+2022.05.23 15:51:26 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2022.05.23 15:51:26 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2022.05.23 15:51:26 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2022.05.23 15:51:26 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2022.05.23 15:56:12 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2022.05.23 15:56:12 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2022.05.23 15:56:12 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2022.05.23 15:56:12 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2022.05.23 15:56:12 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2022.05.23 15:56:12 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2022.05.23 15:56:14 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2022.05.23 15:56:14 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2022.05.23 15:56:14 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2022.05.23 15:56:16 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /home/alumno/Descargas/sonarqube-7.8
+2022.05.23 15:56:16 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2022.05.23 15:56:17 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2022.05.23 15:56:17 INFO  ce[][o.s.p.ProcessEntryPoint] Hard stopping process
+2022.05.23 15:56:17 WARN  ce[][o.s.p.ProcessEntryPoint$StopperThread] Can not stop in 21630000ms
+2022.05.23 15:56:18 WARN  ce[][o.s.p.ProcessEntryPoint$HardStopperThread] Can not stop in 1000ms
+2022.05.23 15:56:18 ERROR ce[][o.s.ce.app.CeServer] Compute Engine startup failed
+java.lang.IllegalStateException: Unable to load component class org.sonar.ce.taskprocessor.CeWorkerFactoryImpl
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:65)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.instantiateComponentAsIsStartable(DefaultPicoContainer.java:1034)
+	at org.picocontainer.DefaultPicoContainer.addAdapterIfStartable(DefaultPicoContainer.java:1026)
+	at org.picocontainer.DefaultPicoContainer.startAdapters(DefaultPicoContainer.java:1003)
+	at org.picocontainer.DefaultPicoContainer.start(DefaultPicoContainer.java:767)
+	at org.sonar.core.platform.ComponentContainer.startComponents(ComponentContainer.java:135)
+	at org.sonar.ce.container.ComputeEngineContainerImpl.startLevel4(ComputeEngineContainerImpl.java:233)
+	at org.sonar.ce.container.ComputeEngineContainerImpl.start(ComputeEngineContainerImpl.java:197)
+	at org.sonar.ce.ComputeEngineImpl.startup(ComputeEngineImpl.java:45)
+	at org.sonar.ce.app.CeServer$CeMainThread.attemptStartup(CeServer.java:160)
+	at org.sonar.ce.app.CeServer$CeMainThread.run(CeServer.java:138)
+Caused by: java.lang.IllegalStateException: Unable to load component class org.sonar.ce.notification.ReportAnalysisFailureNotificationExecutionListener
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:65)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:621)
+	at org.picocontainer.parameters.CollectionComponentParameter.getArrayInstance(CollectionComponentParameter.java:334)
+	at org.picocontainer.parameters.CollectionComponentParameter.access$100(CollectionComponentParameter.java:49)
+	at org.picocontainer.parameters.CollectionComponentParameter$1.resolveInstance(CollectionComponentParameter.java:139)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:141)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:63)
+	... 21 common frames omitted
+Caused by: java.lang.IllegalStateException: Unable to load component class org.sonar.server.notification.NotificationService
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:65)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:63)
+	... 37 common frames omitted
+Caused by: java.lang.IllegalStateException: Unable to load component class org.sonar.server.qualitygate.notification.QGChangeNotificationHandler
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:65)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:621)
+	at org.picocontainer.parameters.CollectionComponentParameter.getArrayInstance(CollectionComponentParameter.java:334)
+	at org.picocontainer.parameters.CollectionComponentParameter.access$100(CollectionComponentParameter.java:49)
+	at org.picocontainer.parameters.CollectionComponentParameter$1.resolveInstance(CollectionComponentParameter.java:139)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:141)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:63)
+	... 51 common frames omitted
+Caused by: java.lang.IllegalStateException: Unable to load component class org.sonar.server.notification.DefaultNotificationManager
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:65)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:63)
+	... 67 common frames omitted
+Caused by: java.lang.IllegalStateException: Unable to load component class org.sonar.server.notification.email.EmailNotificationChannel
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:65)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:621)
+	at org.picocontainer.parameters.CollectionComponentParameter.getArrayInstance(CollectionComponentParameter.java:334)
+	at org.picocontainer.parameters.CollectionComponentParameter.access$100(CollectionComponentParameter.java:49)
+	at org.picocontainer.parameters.CollectionComponentParameter$1.resolveInstance(CollectionComponentParameter.java:139)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:141)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:63)
+	... 81 common frames omitted
+Caused by: java.lang.IllegalStateException: Unable to load component class org.sonar.api.config.EmailSettings
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:65)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:63)
+	... 97 common frames omitted
+Caused by: java.lang.IllegalStateException: Unable to load component class org.sonar.server.platform.ServerImpl
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:65)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:63)
+	... 111 common frames omitted
+Caused by: java.lang.IllegalStateException: Unable to load component class org.sonar.server.platform.ServerImpl
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:65)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:621)
+	at org.picocontainer.containers.ImmutablePicoContainer.getComponent(ImmutablePicoContainer.java:40)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:718)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:63)
+	... 125 common frames omitted
+Caused by: java.lang.IllegalStateException: Unable to load component class org.sonar.server.platform.StartupMetadata
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:65)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:63)
+	... 130 common frames omitted
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.h2.jdbc.JdbcSQLException: Conexión rota: "java.net.ConnectException: Connection refused (Connection refused): 127.0.0.1:9092"
+Connection is broken: "java.net.ConnectException: Connection refused (Connection refused): 127.0.0.1:9092" [90067-176]
+### The error may exist in org.sonar.db.property.PropertiesMapper
+### The error may involve org.sonar.db.property.PropertiesMapper.selectByKey
+### The error occurred while executing a query
+### Cause: org.h2.jdbc.JdbcSQLException: Conexión rota: "java.net.ConnectException: Connection refused (Connection refused): 127.0.0.1:9092"
+Connection is broken: "java.net.ConnectException: Connection refused (Connection refused): 127.0.0.1:9092" [90067-176]
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:149)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58)
+	at com.sun.proxy.$Proxy20.selectByKey(Unknown Source)
+	at org.sonar.db.property.PropertiesDao.selectGlobalProperty(PropertiesDao.java:137)
+	at org.sonar.server.platform.StartupMetadataProvider.selectProperty(StartupMetadataProvider.java:76)
+	at org.sonar.server.platform.StartupMetadataProvider.load(StartupMetadataProvider.java:70)
+	at org.sonar.server.platform.StartupMetadataProvider.provide(StartupMetadataProvider.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.picocontainer.injectors.MethodInjector.invokeMethod(MethodInjector.java:129)
+	at org.picocontainer.injectors.MethodInjector.access$000(MethodInjector.java:39)
+	at org.picocontainer.injectors.MethodInjector$2.run(MethodInjector.java:113)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.MethodInjector.decorateComponentInstance(MethodInjector.java:120)
+	at org.picocontainer.injectors.CompositeInjector.decorateComponentInstance(CompositeInjector.java:58)
+	at org.picocontainer.injectors.Reinjector.reinject(Reinjector.java:142)
+	at org.picocontainer.injectors.ProviderAdapter.getComponentInstance(ProviderAdapter.java:96)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.sonar.core.platform.ComponentContainer$ExtendedDefaultPicoContainer.getComponent(ComponentContainer.java:63)
+	... 144 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLException: Conexión rota: "java.net.ConnectException: Connection refused (Connection refused): 127.0.0.1:9092"
+Connection is broken: "java.net.ConnectException: Connection refused (Connection refused): 127.0.0.1:9092" [90067-176]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:167)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:434)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:311)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:107)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:91)
+	at org.h2.Driver.connect(Driver.java:74)
+	at org.apache.commons.dbcp2.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:53)
+	at org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:291)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:883)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:436)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:365)
+	at org.apache.commons.dbcp2.PoolingDataSource.getConnection(PoolingDataSource.java:134)
+	at org.apache.commons.dbcp2.BasicDataSource.getConnection(BasicDataSource.java:1563)
+	at org.sonar.db.profiling.NullConnectionInterceptor.getConnection(NullConnectionInterceptor.java:31)
+	at org.sonar.db.profiling.ProfiledDataSource.getConnection(ProfiledDataSource.java:317)
+	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.openConnection(JdbcTransaction.java:138)
+	at org.apache.ibatis.transaction.jdbc.JdbcTransaction.getConnection(JdbcTransaction.java:60)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.ReuseExecutor.prepareStatement(ReuseExecutor.java:88)
+	at org.apache.ibatis.executor.ReuseExecutor.doQuery(ReuseExecutor.java:59)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	... 168 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:123)
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:103)
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:100)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:430)
+	... 191 common frames omitted
+2022.05.23 15:57:11 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2022.05.23 15:57:11 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2022.05.23 15:57:11 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2022.05.23 15:57:11 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2022.05.23 15:57:11 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2022.05.23 15:57:11 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2022.05.23 15:57:13 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2022.05.23 15:57:13 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2022.05.23 15:57:13 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2022.05.23 15:57:14 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /home/alumno/Descargas/sonarqube-7.8
+2022.05.23 15:57:15 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2022.05.23 15:57:16 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2022.05.23 15:57:16 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2022.05.23 15:58:03 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2022.05.23 15:58:03 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2022.05.23 15:58:03 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2022.05.23 15:58:04 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2022.05.23 16:03:41 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2022.05.23 16:03:41 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2022.05.23 16:03:41 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2022.05.23 16:03:41 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2022.05.23 16:03:41 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2022.05.23 16:03:41 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2022.05.23 16:03:43 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2022.05.23 16:03:43 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2022.05.23 16:03:43 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2022.05.23 16:03:45 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /home/alumno/Descargas/sonarqube-7.8
+2022.05.23 16:03:45 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2022.05.23 16:03:47 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2022.05.23 16:03:47 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2022.05.23 16:04:20 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2022.05.23 16:04:20 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2022.05.23 16:04:20 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2022.05.23 16:04:21 INFO  ce[][o.s.p.ProcessEntryPoint] Hard stopping process
+2022.05.23 16:04:21 WARN  ce[][o.s.p.ProcessEntryPoint$StopperThread] Can not stop in 21630000ms
+2022.05.23 16:04:21 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2022.05.23 16:05:24 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2022.05.23 16:05:24 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2022.05.23 16:05:25 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2022.05.23 16:05:25 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2022.05.23 16:05:25 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2022.05.23 16:05:25 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2022.05.23 16:05:27 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2022.05.23 16:05:27 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2022.05.23 16:05:27 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2022.05.23 16:05:29 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /home/alumno/Descargas/sonarqube-7.8
+2022.05.23 16:05:29 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2022.05.23 16:05:32 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2022.05.23 16:05:32 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2022.05.23 16:07:14 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2022.05.23 16:07:14 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2022.05.23 16:07:14 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2022.05.23 16:07:14 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2022.05.23 16:09:52 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2022.05.23 16:09:52 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2022.05.23 16:09:53 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2022.05.23 16:09:53 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2022.05.23 16:09:53 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2022.05.23 16:09:53 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2022.05.23 16:09:55 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2022.05.23 16:09:55 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2022.05.23 16:09:55 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2022.05.23 16:09:57 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /home/alumno/Descargas/sonarqube-7.8
+2022.05.23 16:09:57 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2022.05.23 16:09:59 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2022.05.23 16:09:59 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2022.05.23 16:10:16 INFO  ce[][o.s.p.ProcessEntryPoint] Gracefully stopping process
+2022.05.23 16:10:16 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopping...
+2022.05.23 16:10:16 INFO  ce[][o.s.c.t.CeProcessingSchedulerImpl] Gracefully stopping workers...
+2022.05.23 16:10:17 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is stopped
+2022.05.23 16:13:59 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2022.05.23 16:13:59 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2022.05.23 16:14:00 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2022.05.23 16:14:00 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2022.05.23 16:14:00 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2022.05.23 16:14:00 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2022.05.23 16:14:02 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2022.05.23 16:14:02 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2022.05.23 16:14:03 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2022.05.23 16:14:04 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /home/alumno/Descargas/sonarqube-7.8
+2022.05.23 16:14:04 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2022.05.23 16:14:05 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2022.05.23 16:14:05 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2022.05.23 16:14:38 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=webview | type=REPORT | id=AYDxRRCbBooClegJ58mh
+2022.05.23 16:14:38 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=19ms
+2022.05.23 16:14:38 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=9ms
+2022.05.23 16:14:38 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=49ms
+2022.05.23 16:14:38 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Execute DB migrations for current project | status=SUCCESS | time=25ms
+2022.05.23 16:14:38 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2022.05.23 16:14:39 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=218ms
+2022.05.23 16:14:39 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+2022.05.23 16:14:39 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Verify billing | status=SUCCESS | time=0ms
+2022.05.23 16:14:39 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=14 | status=SUCCESS | time=71ms
+2022.05.23 16:14:39 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=6ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=1880ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=61ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=0ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Detect file moves | status=SUCCESS | time=0ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=0 | status=SUCCESS | time=6ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=26ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=10ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=12ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=5ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Copy custom measures | status=SUCCESS | time=10ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=2ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=2ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=31ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=3ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=6ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=3ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=8ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=387ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=1ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=31ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=10ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=3ms
+2022.05.23 16:14:41 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=2ms
+2022.05.23 16:14:42 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=77ms
+2022.05.23 16:14:42 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=3ms
+2022.05.23 16:14:42 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=1ms
+2022.05.23 16:14:42 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=49 | status=SUCCESS | time=77ms
+2022.05.23 16:14:42 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=399 | status=SUCCESS | time=449ms
+2022.05.23 16:14:42 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=2ms
+2022.05.23 16:14:42 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=2ms
+2022.05.23 16:14:42 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Persist issues | inserts=3 | updates=0 | merged=0 | untouched=0 | status=SUCCESS | time=57ms
+2022.05.23 16:14:42 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=20ms
+2022.05.23 16:14:42 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=33ms
+2022.05.23 16:14:42 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=164ms
+2022.05.23 16:14:42 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+2022.05.23 16:14:42 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=4ms
+2022.05.23 16:14:42 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=12ms
+2022.05.23 16:14:43 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=205ms
+2022.05.23 16:14:44 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=SUCCESS | time=928ms
+2022.05.23 16:14:44 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Send issue notifications | newIssuesNotifs=0 | newIssuesDeliveries=0 | myNewIssuesNotifs=0 | myNewIssuesDeliveries=0 | changesNotifs=0 | changesDeliveries=0 | status=SUCCESS | time=3ms
+2022.05.23 16:14:44 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
+2022.05.23 16:14:44 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
+2022.05.23 16:14:44 INFO  ce[AYDxRRCbBooClegJ58mh][o.s.c.t.CeWorkerImpl] Executed task | project=webview | type=REPORT | id=AYDxRRCbBooClegJ58mh | status=SUCCESS | time=6031ms
+2022.05.23 16:17:02 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2022.05.23 16:17:02 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2022.05.23 16:17:03 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2022.05.23 16:17:03 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2022.05.23 16:17:03 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2022.05.23 16:17:03 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2022.05.23 16:17:05 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2022.05.23 16:17:05 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2022.05.23 16:17:05 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2022.05.23 16:17:06 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /home/alumno/Escritorio/GPI/sonarqube-7.8
+2022.05.23 16:17:06 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+2022.05.23 16:17:08 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+2022.05.23 16:17:08 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+2022.05.23 16:17:59 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=webview | type=REPORT | id=AYDxSCBExnzouBU4kIH-
+2022.05.23 16:18:00 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=23ms
+2022.05.23 16:18:00 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=14ms
+2022.05.23 16:18:00 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=82ms
+2022.05.23 16:18:00 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Execute DB migrations for current project | status=SUCCESS | time=6ms
+2022.05.23 16:18:00 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+2022.05.23 16:18:00 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=125ms
+2022.05.23 16:18:00 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+2022.05.23 16:18:00 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Verify billing | status=SUCCESS | time=0ms
+2022.05.23 16:18:00 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=14 | status=SUCCESS | time=45ms
+2022.05.23 16:18:00 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=6ms
+2022.05.23 16:18:01 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=1217ms
+2022.05.23 16:18:01 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=47ms
+2022.05.23 16:18:01 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=0ms
+2022.05.23 16:18:01 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Detect file moves | status=SUCCESS | time=0ms
+2022.05.23 16:18:01 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=0 | status=SUCCESS | time=3ms
+2022.05.23 16:18:01 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+2022.05.23 16:18:01 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=30ms
+2022.05.23 16:18:01 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=8ms
+2022.05.23 16:18:01 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=8ms
+2022.05.23 16:18:01 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=2ms
+2022.05.23 16:18:01 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Copy custom measures | status=SUCCESS | time=3ms
+2022.05.23 16:18:01 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=1ms
+2022.05.23 16:18:01 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=1ms
+2022.05.23 16:18:01 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=18ms
+2022.05.23 16:18:01 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=1ms
+2022.05.23 16:18:02 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=3ms
+2022.05.23 16:18:02 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=2ms
+2022.05.23 16:18:02 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=4ms
+2022.05.23 16:18:02 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=410ms
+2022.05.23 16:18:02 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=1ms
+2022.05.23 16:18:02 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=26ms
+2022.05.23 16:18:02 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=14ms
+2022.05.23 16:18:02 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=2ms
+2022.05.23 16:18:02 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=20ms
+2022.05.23 16:18:02 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=103ms
+2022.05.23 16:18:02 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=4ms
+2022.05.23 16:18:02 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=1ms
+2022.05.23 16:18:02 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=49 | status=SUCCESS | time=73ms
+2022.05.23 16:18:03 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=399 | status=SUCCESS | time=478ms
+2022.05.23 16:18:03 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=3ms
+2022.05.23 16:18:03 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=0ms
+2022.05.23 16:18:03 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Persist issues | inserts=3 | updates=0 | merged=0 | untouched=0 | status=SUCCESS | time=58ms
+2022.05.23 16:18:03 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=3ms
+2022.05.23 16:18:03 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=15ms
+2022.05.23 16:18:03 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=102ms
+2022.05.23 16:18:03 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+2022.05.23 16:18:03 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=3ms
+2022.05.23 16:18:03 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=8ms
+2022.05.23 16:18:03 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=145ms
+2022.05.23 16:18:03 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=SUCCESS | time=397ms
+2022.05.23 16:18:03 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Send issue notifications | newIssuesNotifs=0 | newIssuesDeliveries=0 | myNewIssuesNotifs=0 | myNewIssuesDeliveries=0 | changesNotifs=0 | changesDeliveries=0 | status=SUCCESS | time=3ms
+2022.05.23 16:18:03 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
+2022.05.23 16:18:03 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
+2022.05.23 16:18:04 INFO  ce[AYDxSCBExnzouBU4kIH-][o.s.c.t.CeWorkerImpl] Executed task | project=webview | type=REPORT | id=AYDxSCBExnzouBU4kIH- | status=SUCCESS | time=4854ms
+2022.05.23 17:22:06 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+2022.05.23 17:22:06 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+2022.05.23 17:22:07 INFO  ce[][o.e.p.PluginsService] no modules loaded
+2022.05.23 17:22:07 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2022.05.23 17:22:07 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2022.05.23 17:22:07 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2022.05.23 17:22:10 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+2022.05.23 17:22:10 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2022.05.23 17:22:11 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2022.05.23 17:26:24 WARN  ce[][o.e.t.OutboundHandler] send message failed [channel: Netty4TcpChannel{localAddress=0.0.0.0/0.0.0.0:37156, remoteAddress=/127.0.0.1:9001}]
+java.nio.channels.ClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.write(...)(Unknown Source)
+2022.05.23 17:27:01 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /home/alumno/Escritorio/GPI/sonarqube-7.8
+2022.05.23 17:27:02 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
