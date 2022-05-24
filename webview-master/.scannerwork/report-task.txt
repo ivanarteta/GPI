@@ -1,6 +1,6 @@
-projectKey=webview
+projectKey=webview-android
 serverUrl=http://localhost:9000
 serverVersion=7.8.0.26217
-dashboardUrl=http://localhost:9000/dashboard?id=webview
-ceTaskId=AYD20hF4RjVddzIOyjY6
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYD20hF4RjVddzIOyjY6
+dashboardUrl=http://localhost:9000/dashboard?id=webview-android
+ceTaskId=AYD3CcSObjQxiQPjpYZl
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYD3CcSObjQxiQPjpYZl
