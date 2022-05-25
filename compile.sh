@@ -1,5 +1,4 @@
 #/bin/bash
-
 cd webview-master
 chmod a+x gradlew
 ./gradlew assembleDebug

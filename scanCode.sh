@@ -4,7 +4,7 @@
 cd webview-master
 
 export PATH=$PATH:/home/alumno/Escritorio/GPI/sonar-scanner-3.3.0.1492-linux/bin
-sonar-scanner -Dsonar.projectKey=webview-android -Dsonar.sources=. -Dsonar.host.url=http://localhost:9000 -Dsonar.java.binaries=gradle/wrapper
+sonar-scanner -Dsonar.projectKey=webview-android2 -Dsonar.sources=. -Dsonar.host.url=http://localhost:9000 -Dsonar.java.binaries=gradle/wrapper
 
 cd ..
 
